@@ -242,13 +242,24 @@ export default function Home() {
             October 30th - November 1st, 2025 Powered by Caliphate Aviation
             Services.
           </p>
-          <div className="mt-6 flex items-center justify-center">
+          <div className=" flex items-center mt-18 flex-col justify-center">
+            <p className="text-md italic text-rose-950">ORGANISED BY:</p>
             <Image
-              src="/zaria.png"
+              src="/logo3.png"
               alt="logo image"
               width={2000}
               height={2000}
-              className="w-54 h-18"
+              className="w-74 h-18"
+            />
+          </div>
+          <div className=" flex items-center mt-18 flex-col justify-center">
+            <p className="text-md italic text-rose-950">SUPPORTED BY:</p>
+            <Image
+              src="/supported.png"
+              alt="logo image"
+              width={2000}
+              height={2000}
+              className="w-74 h-18"
             />
           </div>
         </div>
