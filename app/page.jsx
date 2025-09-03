@@ -248,7 +248,7 @@ export default function Home() {
               alt="logo image"
               width={2000}
               height={2000}
-              className="w-48 h-12"
+              className="w-54 h-18"
             />
           </div>
         </div>
@@ -260,17 +260,17 @@ export default function Home() {
 
 const cards = [
   {
-    image: "/glr6.jpg",
+    image: "/glr6.JPG",
     title: "Historical Exhibition",
     desc: " Historical background of the first aircraft landing in Nigeria at Kano. ",
   },
   {
-    image: "/glr3.jpg",
+    image: "/glr3.JPG",
     title: "Symposium",
     desc: " Aviation industry leaders’ discussion on aviation's role in economic growth, innovation, and Nigeria's global connectivity.  ",
   },
   {
-    image: "/glr1.jpg",
+    image: "/glr1.JPG",
     title: "Student Workshops",
     desc: "Interactive learning experiences for students, inspiring the next generation of aviators and aerospace professionals. ",
   },
@@ -285,17 +285,17 @@ const cards = [
     desc: " An open-air exhibition featuring real aircraft positioned on the ground for exploration and engagement with aviation professionals. ",
   },
   {
-    image: "/glr5.jpg",
+    image: "/glr5.JPG",
     title: "Airshow Live Aerial Performance",
     desc: "  Thrilling aerial maneuvers and aerobatics by military jets, private planes, and aerobatic teams. ",
   },
   {
-    image: "/glr2.jpg",
+    image: "/glr2.JPG",
     title: "Panel Discussion Aviation Insights",
     desc: "Dialogue with executives, regulators, historians, pilots, and investors exploring innovation, policy, and the future of aviation. ",
   },
   {
-    image: "/glr4.jpg",
+    image: "/glr4.JPG",
     title: "Competition",
     desc: "Unique opportunity to compete in three distinct categories: Kids Kiting, Cake Baking, and Inventive Thinking.",
   },

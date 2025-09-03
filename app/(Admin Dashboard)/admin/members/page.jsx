@@ -95,6 +95,9 @@ function ManageProducts() {
                   <th className="text-lg max-sm:text-sm max-sm:px-8 font-bold text-rose-950">
                     Organisation
                   </th>
+                  <th className="text-lg max-sm:text-sm max-sm:px-8 font-bold text-rose-950">
+                    Company
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -114,6 +117,9 @@ function ManageProducts() {
                     </td>
                     <td className="text-sm whitespace-nowrap max-sm:text-sm max-sm:px-8 text-slate-700 font-normal text-left py-2">
                       {member.organisation}
+                    </td>
+                    <td className="text-sm whitespace-nowrap max-sm:text-sm max-sm:px-8 text-slate-700 font-normal text-left py-2">
+                      {member.company}
                     </td>
                     <td className="text-sm whitespace-nowrap max-sm:text-sm max-sm:px-8 w-28 text-slate-700 font-normal text-left py-2">
                       <span className="flex items-center  gap-6">
