@@ -1,12 +1,10 @@
 "use client";
-import { Search, Trash, Edit } from "lucide-react";
-import Image from "next/image";
+import { Search, Trash } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useSession } from "next-auth/react";
-import FormLoader from "@/components/constants/FormLoader";
-
+import PageLoader from "@/components/constants/PageLoader";
 function ManageAdmins() {
   const [Loading, setLoading] = useState(true);
   const [data, setdata] = useState([]);
