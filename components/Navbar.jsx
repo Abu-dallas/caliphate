@@ -10,14 +10,14 @@ function Navbar({ setOpen }) {
   const pathname = usePathname();
   const { data: session } = useSession();
   return (
-    <div className="w-full  max-sm:fixed z-10 top-0  flex items-center justify-between maroon">
-      <Link href="/" className="text-3xl p-2  text-white font-bold">
+    <div className="w-full  max-sm:fixed z-10 top-0  flex items-center justify-between bg-rose-950">
+      <Link href="/" className="p-2">
         <Image
           src="/whitelogo.png"
           alt="logo image"
           width={2000}
-          height={2000}
-          className="w-64 h-12 max-sm:w-32 max-sm:h-11"
+          height={1000}
+          className="w-40 h-12 object-contain  lg:w-48 "
         />
       </Link>
       <div className="hidden md:flex items-center justify-end w-full gap-4 pr-12">

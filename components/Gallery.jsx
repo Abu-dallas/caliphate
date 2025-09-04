@@ -4,7 +4,7 @@ import React from "react";
 function Gallery() {
   return (
     <div className="flex items-center flex-col justify-center mt-12 mb-12">
-      <h3 className="text-4xl text-rose-950 font-bold mb-4">Photo Gallery</h3>
+      <h3 className="text-3xl text-rose-950 font-bold mb-4">Photo Gallery</h3>
       <div className="grid w-full px-4 lg:w-[80%] gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center">
         {gallery.map((image, index) => (
           <div

@@ -4,6 +4,7 @@ import Gallery from "@/components/Gallery";
 import HeaderWrapper from "@/components/HeaderWrapper";
 import Timer from "@/components/Timer";
 import Image from "next/image";
+
 export default function Home() {
   return (
     <div>
@@ -32,33 +33,34 @@ export default function Home() {
           Grand Opening: 30th October 2025
         </p>
       </div> */}
-      <div className=" bg-gradient-to-r overflow-hidden h-screen from-cyan-200 flex items-center justify-center flex-col to-rose-200 pb-37">
+      <div className=" bg-gradient-to-r overflow-hidden h-screen from-cyan-200 flex items-center justify-center flex-col lg:flex-row lg:gap-14 to-rose-200 pb-37">
         <Image
           src="/hero3.png"
           alt="100 logo"
           width={2000}
           height={2000}
-          className="w-70 lg:w-100 lg:h-80 h-80 mt-24"
+          className="w-70 lg:w-100 lg:h-80 object-contain h-70 mt-24"
         />
+
         <div className="mt-12">
           <Timer />
         </div>
       </div>
       {/* Highlight */}
       <section className="py-20 text-slate-800 text-center">
-        <h2 className="text-4xl font-extrabold mb-12">Event Features</h2>
+        <h2 className="text-3xl font-extrabold mb-12">Event Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4 max-w-6xl mx-auto lg:w-[80%] items-center justify-center flex-col">
           {cards.map((item, idx) => (
             <div
               key={idx}
-              className="border border-slate-300 flex overflow-hidden items-center justify-center flex-col  w-full  h-120 rounded-2xl"
+              className="border border-slate-300 flex overflow-hidden items-center justify-center flex-col  w-full  h-100 rounded-2xl"
             >
               <Image
                 src={item.image}
                 alt="image"
                 width={2000}
                 height={2000}
-                className="w-full h-[80%] -mt-8"
+                className="w-full h-[70%] object-cover -mt-8"
               />
               <div className="p-4">
                 <h3
@@ -79,7 +81,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center py-6 text-rose-950"
       >
         {" "}
-        <h2 className="text-4xl font-extrabold mb-12">
+        <h2 className="text-3xl font-extrabold mb-12">
           3-Days Event Schedule
         </h2>{" "}
         <div className="grid grid-cols-1 md:grid-cols-3 items-center mx-auto gap-12 w-full lg:w-[80%] px-4">
@@ -126,32 +128,37 @@ export default function Home() {
         <Form />
       </div>
 
-      <div className="flex items-center justify-center flex-col px-3">
+      <div className="flex w-full items-center justify-center flex-col px-3">
         <div className="md:w-[80%] flex flex-col items-center justify-center">
-          <h2 id="organizers" className="text-4xl text-rose-950 font-bold">
-            Organizers
+          <h2 id="organizers" className="text-3xl text-rose-950 font-bold">
+            Organized By:
           </h2>
-          <p className="text-xl text-slate-800 mt-2">
-            Caliphate Aviation Handling Services is an Aviation Services
-            Provider, Travel/Tourism, and Consultancy Company, with a
-            well-equipped Training Centre design to offer various aviation
-            professional courses as well as aviation and management support
-            services directly and in conjunction with our global partners. We
-            pride ourselves through our extensive network and established
-            collaboration within the aviation sector. Our affiliation includes
-            reputable institution such as African Aviation Aerospace University
-            (AAAU) and the Nigerian College of Aviation Technology (NCAT). those
-            collaborations, coupled with our certification by the Nigeria Civil
-            Aviation Authority <b>(NCA/ATR/AS/ATI.023)</b> underscore our
-            commitment to excellence adherence to regulatory standards and our
-            capacity to deliver high-quality aviation education and services
-          </p>
+          <Image
+            src="/logo3.png"
+            alt="logo image"
+            width={2000}
+            height={2000}
+            className="w-auto h-24 lg:w-150 lg:h-30"
+          />
+        </div>
+
+        <div className="w-full flex items-center mt-18 flex-col justify-center">
+          <h2 id="organizers" className="text-3xl text-rose-950 font-bold">
+            Supported By:
+          </h2>
+          <Image
+            src="/supported.png"
+            alt="logo image"
+            width={2000}
+            height={2000}
+            className="w-auto h-24 lg:w-150 lg:h-30"
+          />
         </div>
       </div>
       <section className="py-20 text-slate-800 text-center flex flex-col items-center justify-center w-full">
         <h2
           id="sponsors"
-          className="text-4xl text-rose-950 font-extrabold mb-12"
+          className="text-3xl text-rose-950 font-extrabold mb-12"
         >
           Our Sponsors
         </h2>
@@ -174,7 +181,7 @@ export default function Home() {
       </section>
       <div className="flex items-center justify-center flex-col px-3">
         <div className="md:w-[80%] flex flex-col items-center justify-center">
-          <h2 id="updates" className="text-4xl text-rose-950 font-bold">
+          <h2 id="updates" className="text-3xl text-rose-950 font-bold">
             Latest Updates
           </h2>
           <p className="text-xl text-slate-800 mt-2">
@@ -183,7 +190,7 @@ export default function Home() {
           </p>
         </div>
         <div className="md:w-[80%] flex flex-col items-center mt-6 justify-center">
-          <h2 id="endorsements" className="text-4xl text-rose-950 font-bold">
+          <h2 id="endorsements" className="text-3xl text-rose-950 font-bold">
             News
           </h2>
           <p className="text-xl text-slate-800 mt-2">
@@ -198,7 +205,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center flex-col px-3">
         <div className="md:w-[80%] flex flex-col items-center justify-center">
-          <h2 id="exhibitors" className="text-4xl text-rose-950 font-bold">
+          <h2 id="exhibitors" className="text-3xl text-rose-950 font-bold">
             Exhibitors
           </h2>
           <p className="text-xl text-slate-800 mt-2 leading-relaxed">
@@ -210,8 +217,8 @@ export default function Home() {
           id="contact"
           className="md:w-[80%] px-4 flex flex-col items-center mt-6 justify-center"
         >
-          <h2 className="text-4xl text-rose-950 font-bold">Contact Us</h2>
-          <p className="text-lg text-slate-800 mt-2 font-bold">
+          <h2 className="text-3xl text-rose-950 font-bold">Contact Us</h2>
+          <p className="text-md text-slate-800 mt-2 font-bold">
             Email:{" "}
             <a
               className="text-blue-500"
@@ -224,7 +231,7 @@ export default function Home() {
               +234-7036336386
             </a>
           </p>
-          <p className="text-lg text-slate-800 mt-2 font-bold">
+          <p className="text-md text-slate-800 mt-2 font-bold">
             Email:{" "}
             <a
               className="text-blue-500"
@@ -242,26 +249,6 @@ export default function Home() {
             October 30th - November 1st, 2025 Powered by Caliphate Aviation
             Services.
           </p>
-          <div className=" flex items-center mt-18 flex-col justify-center">
-            <p className="text-md italic text-rose-950">ORGANISED BY:</p>
-            <Image
-              src="/logo3.png"
-              alt="logo image"
-              width={2000}
-              height={2000}
-              className="w-74 h-18"
-            />
-          </div>
-          <div className=" flex items-center mt-18 flex-col justify-center">
-            <p className="text-md italic text-rose-950">SUPPORTED BY:</p>
-            <Image
-              src="/supported.png"
-              alt="logo image"
-              width={2000}
-              height={2000}
-              className="w-74 h-18"
-            />
-          </div>
         </div>
       </div>
       <Footer />

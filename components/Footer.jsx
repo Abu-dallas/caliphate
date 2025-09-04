@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="maroon py-4 px-4 flex flex-col md:items-center lg:justify-center mt-16">
+    <div className="bg-rose-950 py-4 px-4 flex flex-col md:items-center lg:justify-center mt-16">
       <div>
         <p className="text-xl font-bold text-slate-200 mb-6 uppercase">
           Support and Assistance

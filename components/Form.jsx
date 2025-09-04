@@ -46,7 +46,7 @@ function Form() {
 
   return (
     <div className="flex items-center flex-col justify-center py-12 mt-16 px-4">
-      <h2 className="text-4xl font-extrabold text-rose-950 mb-4">
+      <h2 className="text-3xl font-extrabold text-rose-950 mb-4">
         Register Your Interest
       </h2>
       <p className="text-lg mb-5 text-slate-600">
