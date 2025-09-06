@@ -33,6 +33,8 @@ function Form() {
       if (res.ok) {
         toast.success("Thank you for your interest");
         setLoading(false);
+        (values.name = ""), (values.email = ""), (values.phone = "");
+        (values.organisation = ""), (values.company = "");
       }
       if (!res.ok) {
         toast.error("failed to register, try again");

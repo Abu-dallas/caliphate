@@ -138,7 +138,7 @@ export default function Home() {
             alt="logo image"
             width={2000}
             height={2000}
-            className="w-auto h-24 lg:w-150 lg:h-30"
+            className="w-80 h-20 lg:w-150 lg:h-30"
           />
         </div>
 
@@ -151,7 +151,7 @@ export default function Home() {
             alt="logo image"
             width={2000}
             height={2000}
-            className="w-auto h-24 lg:w-150 lg:h-30"
+            className="w-75 h-18 lg:w-150 lg:h-30"
           />
         </div>
       </div>

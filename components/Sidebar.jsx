@@ -35,6 +35,7 @@ function Sidebar({ Open, setOpen }) {
                     ? "text-blue-500 font-semibold"
                     : "text-slate-200"
                 }`}
+                onClick={() => setOpen(false)}
               >
                 {link.title}
               </Link>

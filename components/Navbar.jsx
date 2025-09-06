@@ -36,20 +36,13 @@ function Navbar({ setOpen }) {
         ))}
       </div>
       <div className="flex gap-4 items-center justify-center">
-        {session ? (
+        {session && (
           <button
             className="text-lg md:mr-4 font-semibold text-white"
             onClick={() => signOut()}
           >
             Logout
           </button>
-        ) : (
-          <Link
-            href="/login"
-            className="text-lg md:mr-4 font-semibold text-white"
-          >
-            Login
-          </Link>
         )}
 
         <Menu
