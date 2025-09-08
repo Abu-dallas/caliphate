@@ -129,7 +129,7 @@ export default function Home() {
       </div>
 
       <div className="flex w-full items-center justify-center flex-col px-3">
-        <div className="md:w-[80%] flex flex-col items-center justify-center">
+        <div className="md:w-[70%]  flex flex-col items-center justify-center">
           <h2 id="organizers" className="text-3xl text-rose-950 font-bold">
             Organized By:
           </h2>
@@ -138,11 +138,11 @@ export default function Home() {
             alt="logo image"
             width={2000}
             height={2000}
-            className="w-80 h-20 lg:w-150 lg:h-30"
+            className="max-lg:w-full max-lg:h-18  lg:object-contain "
           />
         </div>
 
-        <div className="w-full flex items-center mt-18 flex-col justify-center">
+        <div className="md:w-[60%] flex items-center mt-18 flex-col justify-center">
           <h2 id="organizers" className="text-3xl text-rose-950 font-bold">
             Supported By:
           </h2>
@@ -151,7 +151,7 @@ export default function Home() {
             alt="logo image"
             width={2000}
             height={2000}
-            className="w-75 h-18 lg:w-150 lg:h-30"
+            className="max-lg:w-80 max-lg:h-25 lg:object-contain "
           />
         </div>
       </div>
