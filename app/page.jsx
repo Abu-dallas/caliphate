@@ -84,7 +84,7 @@ export default function Home() {
         <h2 className="text-3xl font-extrabold mb-12">
           3-Days Event Schedule
         </h2>{" "}
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center mx-auto gap-12 w-full lg:w-[80%] px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3  mx-auto gap-12 w-full lg:w-[80%] px-4">
           <div>
             <h3 className="font-bold text-xl mb-4 bg-rose-950 rounded text-center p-2 text-white">
               📅 Day 1 – October 30, 2025
@@ -92,8 +92,23 @@ export default function Home() {
             <ul className="space-y-2 font-semibold">
               {" "}
               <li className="px-2 border-l-6 border-rose-950">
-                Opening Ceremony & Welcome Address Historical Exhibition Launch
-                Keynote: “100 Years of Aviation in Kano”
+                Opening Ceremony & Welcome Address
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Launch of the Historical Exhibition
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Keynote Address: “100 Years of Aviation in Kano”
+              </li>
+              <li className="px-2">lecture on:</li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Student Workshops & Demonstrations
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Cultural Performances
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Kids Kite Competition
               </li>
             </ul>
           </div>{" "}
@@ -104,8 +119,16 @@ export default function Home() {
             <ul className="space-y-2">
               {" "}
               <li className="px-2 border-l-6 border-rose-950">
-                Student Workshops & Demonstrations Panel: “Future of Aviation in
-                Nigeria Industry Innovation Showcase Cultural Performance
+                Student Workshops & Demonstrations
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Panel Session: “The Future of Aviation in Nigeria”
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Industry Innovation Showcase
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Cultural Performances
               </li>
             </ul>
           </div>{" "}
@@ -116,11 +139,33 @@ export default function Home() {
             <ul className="space-y-2">
               {" "}
               <li className="px-2 border-l-6 border-rose-950">
-                Static Aircraft Display & Airshow Pioneer Recognition Ceremony
-                Business & Investment Forum Closing Ceremony & Fireworks
+                Static Aircraft Display & Airshow
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Pioneer Recognition Ceremony
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Business & Investment Forum
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">Competitions</li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Cultural Performances
+              </li>
+              <li className="px-2 border-l-6 border-rose-950">
+                Closing Ceremony & Farewell
               </li>
             </ul>
           </div>{" "}
+        </div>
+        <div className="md:w-[80%] flex flex-col items-center px-2 pl-3 mt-8 justify-center">
+          <h2 id="exhibitors" className="text-3xl text-rose-950 font-bold">
+            Exhibitors
+          </h2>
+          <p className="text-xl text-slate-800 mt-2 leading-relaxed">
+            A global showcase of aviation companies, innovators, and
+            institutions highlighting their contributions to the history and
+            future of aviation.
+          </p>
         </div>
       </section>
       {/* Form */}
@@ -185,8 +230,8 @@ export default function Home() {
             Latest Updates
           </h2>
           <p className="text-xl text-slate-800 mt-2">
-            Stay tuned for keynote announcements, exhibitor lists, and program
-            details.
+            Stay tuned for keynote speaker announcements, exhibitor listings,
+            and program details as the celebration draws nearer.
           </p>
         </div>
         <div className="md:w-[80%] flex flex-col items-center mt-6 justify-center">
@@ -202,20 +247,37 @@ export default function Home() {
       <div id="gallery">
         <Gallery />
       </div>
-
-      <div className="flex items-center justify-center flex-col px-3">
-        <div className="md:w-[80%] flex flex-col items-center justify-center">
-          <h2 id="exhibitors" className="text-3xl text-rose-950 font-bold">
-            Exhibitors
+      <div className="w-full flex items-center justify-center">
+        <div className="md:w-[80%] flex flex-col items-center justify-center px-2 pl-3">
+          <h2 id="updates" className="text-3xl text-rose-950 font-bold mt-3">
+            About Organisers
           </h2>
-          <p className="text-xl text-slate-800 mt-2 leading-relaxed">
-            Global aviation companies, innovators, and institutions showcasing
-            their contributions to aviation history and future.
+          <p className="text-xl text-slate-800 mt-2">
+            <span className="font-semibold">
+              Caliphate Aviation Training Center Kano
+            </span>{" "}
+            is equipped to deliver professional aviation courses and management
+            support services, both independently and in collaboration with
+            global partners. Moreover, Caliphate Aviation Training Center is a
+            subsidiary of Caliphate Aviation Handling Services, a premier
+            aviation service provider specializing in travel, tourism, and
+            consultancy. The company operates a modern aviation training
+            facility. Through its extensive industry network, the organization
+            maintains strong affiliations with reputable institutions, including
+            the African Aviation Aerospace University (AAAU) and the Nigerian
+            College of Aviation Technology (NCAT). These collaborations, coupled
+            with our certification by the Nigerian Civil Aviation Authority
+            (NCAA) (NCAA/ATR/AS/ATL.023), underscore our commitment to
+            excellence, adherence to regulatory standards, and capability to
+            deliver high-quality aviation education and services.
           </p>
         </div>
+      </div>
+
+      <div className="flex items-center justify-center flex-col px-3">
         <div
           id="contact"
-          className="md:w-[80%] px-4 flex flex-col items-center mt-6 justify-center"
+          className="md:w-[80%] px-4 flex flex-col md:items-center mt-6 justify-center"
         >
           <h2 className="text-3xl text-rose-950 font-bold">Contact Us</h2>
           <p className="text-md text-slate-800 mt-2 font-bold">
@@ -226,28 +288,29 @@ export default function Home() {
             >
               nigeriafirstaircraftlanding100@gmail.com
             </a>
-            | Phone:{" "}
-            <a className="text-blue-500" href="tel:+2347036336386">
-              +234-7036336386
-            </a>
           </p>
-          <p className="text-md text-slate-800 mt-2 font-bold">
-            Email:{" "}
+          <div className="text-md flex gap-2 max-sm:flex-col text-slate-800 mt-2 font-bold">
+            Phone:{" "}
             <a
-              className="text-blue-500"
-              href="maito:nigeriafirstaircraftlanding100@gmail.com"
+              className="text-blue-500 pr-2 border-r  border-slate-800"
+              href="tel:+2348165126814 "
             >
-              info@caliphateaviation.com
+              +234-816-512-6814
             </a>
-            | Phone:{" "}
-            <a className="text-blue-500" href="tel:+2347036336386">
-              +234-800-123-4567
+            <a
+              className="text-blue-500 pr-2 border-r border-slate-800"
+              href="tel:+2347036336386"
+            >
+              +234-703-633-6386
             </a>
-          </p>
-          <p className="text-sm italic">
-            First Aircraft Landing in Nigeria at Kano 100th Year Anniversary
-            October 30th - November 1st, 2025 Powered by Caliphate Aviation
-            Services.
+            <a className="text-blue-500" href="tel:+2348053559972 ">
+              +234-805-355-9972
+            </a>
+          </div>
+          <p className="text-sm italic mt-2">
+            Join us in Celebrating a Century of Aviation History, Innovation,
+            and Progress, as we Honor the First Aircraft Landing in Nigeria at
+            Kano.
           </p>
         </div>
       </div>
@@ -260,42 +323,52 @@ const cards = [
   {
     image: "/glr6.JPG",
     title: "Historical Exhibition",
-    desc: " Historical background of the first aircraft landing in Nigeria at Kano. ",
+    desc: " A landmark exhibition narrating the historical background of the first aircraft landing in Nigeria at Kano, showcasing archival materials, artifacts, and stories of this defining moment in aviation history. ",
   },
   {
     image: "/glr3.JPG",
     title: "Symposium",
-    desc: " Aviation industry leaders’ discussion on aviation's role in economic growth, innovation, and Nigeria's global connectivity.  ",
+    desc: "the challenges and way forward in banking and travel, including how exchange rates affect travel and the repatriation challenges faced by airlines. ",
   },
   {
     image: "/glr1.JPG",
     title: "Student Workshops",
-    desc: "Interactive learning experiences for students, inspiring the next generation of aviators and aerospace professionals. ",
+    desc: "Interactive and engaging workshops designed to inspire students from primary to tertiary levels, nurturing the next generation of aviators, engineers, and aerospace professionals.",
   },
   {
     image: "/glr7.jpg",
     title: "Honoring Pioneers",
-    desc: " Recognizing Kano's aviation heroes and innovators for their historical contributions. ",
+    desc: "A special recognition ceremony celebrating Kano and Nigerian aviation heroes and innovators whose vision and dedication paved the way for aviation growth in Nigeria and West Africa. ",
   },
   {
     image: "/jirage.jpg",
     title: "Static Aircarft Display",
-    desc: " An open-air exhibition featuring real aircraft positioned on the ground for exploration and engagement with aviation professionals. ",
+    desc: "A #ground exhibition# of aircraft, enabling attendees to explore real airplanes up close and interact directly with aviation professionals. ",
   },
   {
     image: "/glr5.JPG",
     title: "Airshow Live Aerial Performance",
-    desc: "  Thrilling aerial maneuvers and aerobatics by military jets, private planes, and aerobatic teams. ",
+    desc: "Thrilling aerial demonstrations and aerobatics featuring military jets and private aircraft symbolizing a century of aviation excellence.",
   },
   {
     image: "/glr2.JPG",
     title: "Panel Discussion Aviation Insights",
-    desc: "Dialogue with executives, regulators, historians, pilots, and investors exploring innovation, policy, and the future of aviation. ",
+    desc: "Interactive sessions with executives, regulators, historians, pilots, and investors, exploring policy, innovation, and the strategic future of aviation in Nigeria, west Africa, Africa and beyond.",
   },
   {
     image: "/glr4.JPG",
     title: "Competition",
-    desc: "Unique opportunity to compete in three distinct categories: Kids Kiting, Cake Baking, and Inventive Thinking.",
+    desc: (
+      <span>
+        A unique celebration of creativity and community through unique engaging
+        categories:
+        <span className="text-xs">
+          <br /> <b>- Kids’ Kite Flying –</b> inspiring young dreamers of flight
+          <br /> <b>- Innovative Thinking –</b> showcasing ideas for the future
+          of aviation
+        </span>
+      </span>
+    ),
   },
 ];
 const sponsor = [

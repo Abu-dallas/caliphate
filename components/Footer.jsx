@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,23 +10,38 @@ function Footer() {
           Support and Assistance
         </p>
 
-        <div className="flex flex-col gap-3">
-          <a
-            href="mailto:info@caliphateaviation.com"
-            className="text-white font-bold"
-          >
-            info@caliphateaviation.com
-          </a>
-          <a href="tel:+234-800-123-4567" className="text-white font-bold">
-            +234-800-123-4567
-          </a>
-        </div>
+        <p className="text-slate-100">
+          Follow our social media handles for more updates
+        </p>
 
         <div className="flex gap-8 p-6 w-full items-center md:px-0 justify-center">
-          <Facebook className="text-slate-100 h-8 w-8" />
-          <Instagram className="text-slate-100 h-8 w-8" />
-          <Twitter className="text-slate-100 h-8 w-8" />
-          <Youtube className="text-slate-100 h-8 w-8" />
+          <Link href="https://www.instagram.com/1stlanding_100">
+            <Image
+              src="/instagram.png"
+              alt="insta logo"
+              width={2000}
+              height={2000}
+              className="h-8 w-8 "
+            />
+          </Link>
+          <Link href="https://vm.tiktok.com/ZSHWEo6dk39nf-fOaya">
+            <Image
+              src="/tiktok.png"
+              alt="tiktok logo"
+              width={2000}
+              height={2000}
+              className="h-8 w-8 "
+            />
+          </Link>
+          <Link href="https://x.com/1stlandiNG100?t=FIMy47hjUUeOJiVmfcOIBg&s=09">
+            <Image
+              src="/x.png"
+              alt="X logo"
+              width={2000}
+              height={2000}
+              className="h-8 w-8 "
+            />
+          </Link>
         </div>
       </div>
     </div>

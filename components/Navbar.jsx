@@ -68,17 +68,22 @@ const NavLinks = [
     href: "#register",
   },
   {
-    title: "Organizers",
-    href: "#organizers",
+    title: "Exhibitors",
+    href: "#exhibitors",
   },
   {
-    title: "Sponsors",
-    href: "#sponsors",
+    title: "Organizers",
+    href: "#organizers",
   },
   {
     title: "Updates",
     href: "#updates",
   },
+  {
+    title: "Sponsors",
+    href: "#sponsors",
+  },
+
   {
     title: "News",
     href: "#endorsements",
@@ -87,10 +92,7 @@ const NavLinks = [
     title: "Gallery",
     href: "#gallery",
   },
-  {
-    title: "Exhibitors",
-    href: "#exhibitors",
-  },
+
   {
     title: "Contact",
     href: "#contact",
