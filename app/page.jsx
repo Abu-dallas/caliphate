@@ -168,10 +168,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-      {/* Form */}
-      <div id="register">
-        <Form />
-      </div>
+      {/* Form id=register */}
+     
 
       <div className="flex w-full items-center justify-center flex-col px-3">
         <div className="md:w-[70%]  flex flex-col items-center justify-center">
