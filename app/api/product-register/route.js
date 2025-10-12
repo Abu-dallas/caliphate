@@ -3,13 +3,12 @@ import Members from "@/models/memberSchema";
 import { NextResponse } from "next/server";
 
 export const POST = async (req) => {
-  const { name, email, phone, organisation, company } = await req.json();
+  const { name, email, phone, organisation, company, image } = await req.json();
   try {
     await ConnectToDb();
     if (!name || !email || !phone || !organisation || !company) {
       return new NextResponse("All fields are required", { status: 404 });
     }
-
     const newMember = await Members.create({
       name,
       email,

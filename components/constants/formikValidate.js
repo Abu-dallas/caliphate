@@ -35,11 +35,8 @@ export const validateMember = (values) => {
   if (!values.phone) {
     errors.phone = "Phone is required";
   }
-  if (!values.organisation) {
-    errors.organisation = "Organisation is required";
-  }
   if (!values.company) {
-    errors.company = "Company Name Required";
+    errors.company = "Organisation Name Required";
   }
 
   return errors;

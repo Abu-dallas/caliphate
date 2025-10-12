@@ -89,7 +89,7 @@ export default function Home() {
             <h3 className="font-bold text-xl mb-4 bg-rose-950 rounded text-center p-2 text-white">
               📅 Day 1 – October 30, 2025
             </h3>
-            <ul className="space-y-2 font-semibold">
+            <ul className="space-y-2">
               {" "}
               <li className="px-2 border-l-6 border-rose-950">
                 Opening Ceremony & Welcome Address
@@ -161,7 +161,7 @@ export default function Home() {
           <h2 id="exhibitors" className="text-3xl text-rose-950 font-bold">
             Exhibitors
           </h2>
-          <p className="text-xl text-slate-800 mt-2 leading-relaxed">
+          <p className="text-xl text-slate-800 mt-2 text-center leading-relaxed">
             A global showcase of aviation companies, innovators, and
             institutions highlighting their contributions to the history and
             future of aviation.
@@ -169,9 +169,6 @@ export default function Home() {
         </div>
       </section>
       {/* Form */}
-      <div id="register">
-        <Form />
-      </div>
 
       <div className="flex w-full items-center justify-center flex-col px-3">
         <div className="md:w-[70%]  flex flex-col items-center justify-center">
@@ -200,7 +197,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <section className="py-20 text-slate-800 text-center flex flex-col items-center justify-center w-full">
+      {/* <section className="py-20 text-slate-800 text-center flex flex-col items-center justify-center w-full">
         <h2
           id="sponsors"
           className="text-3xl text-rose-950 font-extrabold mb-12"
@@ -223,13 +220,14 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section>*/}
+
       <div className="flex items-center justify-center flex-col px-3">
         <div className="md:w-[80%] flex flex-col items-center justify-center">
           <h2 id="updates" className="text-3xl text-rose-950 font-bold">
             Latest Updates
           </h2>
-          <p className="text-xl text-slate-800 mt-2">
+          <p className="text-xl text-slate-800 mt-2 text-center">
             Stay tuned for keynote speaker announcements, exhibitor listings,
             and program details as the celebration draws nearer.
           </p>
@@ -238,7 +236,7 @@ export default function Home() {
           <h2 id="endorsements" className="text-3xl text-rose-950 font-bold">
             News
           </h2>
-          <p className="text-xl text-slate-800 mt-2">
+          <p className="text-xl text-slate-800 mt-2 text-center">
             Supported by the Nigerian Aviation Authority, Kano State Government,
             and international aviation organizations.
           </p>
@@ -252,7 +250,7 @@ export default function Home() {
           <h2 id="updates" className="text-3xl text-rose-950 font-bold mt-3">
             About Organisers
           </h2>
-          <p className="text-xl text-slate-800 mt-2">
+          <p className="text-xl text-slate-800 mt-2 text-center">
             <span className="font-semibold">
               Caliphate Aviation Training Center Kano
             </span>{" "}
@@ -347,12 +345,12 @@ const cards = [
   },
   {
     image: "/glr5.JPG",
-    title: "Airshow Live Aerial Performance",
+    title: "Airshow",
     desc: "Thrilling aerial demonstrations and aerobatics featuring military jets and private aircraft symbolizing a century of aviation excellence.",
   },
   {
     image: "/glr2.JPG",
-    title: "Panel Discussion Aviation Insights",
+    title: "Panel Discussion",
     desc: "Interactive sessions with executives, regulators, historians, pilots, and investors, exploring policy, innovation, and the strategic future of aviation in Nigeria, west Africa, Africa and beyond.",
   },
   {
@@ -362,10 +360,8 @@ const cards = [
       <span>
         A unique celebration of creativity and community through unique engaging
         categories:
-        <span className="text-xs">
-          <br /> <b>- Kids’ Kite Flying –</b> inspiring young dreamers of flight
-          <br /> <b>- Innovative Thinking –</b> showcasing ideas for the future
-          of aviation
+        <span className="font-semibold ml-2">
+          Innovative Thinking & Kids’ Kite Flying
         </span>
       </span>
     ),
