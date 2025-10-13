@@ -341,7 +341,7 @@ const cards = [
   {
     image: "/jirage.jpg",
     title: "Static Aircarft Display",
-    desc: "A #ground exhibition# of aircraft, enabling attendees to explore real airplanes up close and interact directly with aviation professionals. ",
+    desc: "A ground exhibition of aircraft, enabling attendees to explore real airplanes up close and interact directly with aviation professionals. ",
   },
   {
     image: "/glr5.JPG",
