@@ -185,7 +185,7 @@ function Form() {
           {organisation ? (
             <span className="bg-slate-100 text-xl px-4 text-center p-1 mt-4 text-rose-950 font-bold">
               Fee:{" "}
-              <span className="ml-4">
+              <span className="ml-4">₦
                 {organisation === "Industry Participant"
                   ? "20,000"
                   : organisation === "Exhibitor"
