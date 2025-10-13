@@ -65,7 +65,7 @@ const NavLinks = [
   },
   {
     title: "Register",
-    href: "#register",
+    href: "/register",
   },
   {
     title: "Exhibitors",
