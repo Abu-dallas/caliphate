@@ -189,7 +189,7 @@ function Form() {
                 {organisation === "Industry Participant"
                   ? "20,000"
                   : organisation === "Exhibitor"
-                  ? "50,000"
+                  ? "150,000"
                   : organisation === "Student"
                   ? "15,000"
                   : organisation === "Vendor"
