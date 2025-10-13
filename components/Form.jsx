@@ -34,7 +34,7 @@ function Form() {
         body: JSON.stringify(payload),
       });
       if (res.ok) {
-        toast.success("Thank you for your interest");
+        toast.success("Redirecting to payment");
         setLoading(false);
         (values.name = ""), (values.email = ""), (values.phone = "");
         (values.organisation = ""), (values.company = ""), setOrganisation("");
@@ -56,17 +56,18 @@ function Form() {
         Register Your Interest
       </h2>
       <p className="text-lg mb-5 text-center text-slate-600">
-        (Be part of this historic celebration. Fill in your details below)
+        (Fill in your details below)
       </p>
       <div className="w-full md:w-[50%]">
         <form
           onSubmit={formik.handleSubmit}
           className="flex flex-col gap-2  px-5 border border-slate-200  py-12  rounded-2xl"
         >
-          <div className="flex items-center justify-center gap-2 w-full">
+          <div className="md:flex items-center justify-center gap-2 w-full">
             <div className="flex flex-col w-full">
-              <label className="text-rose-950">Name</label>
+              <label className="text-rose-950">Full Name</label>
               <input
+                placeholder="Enter your full name"
                 type="text"
                 name="name"
                 className="py-3 pl-2 rounded-lg outline-none border bg-neutral-100 border-slate-200 focus:ring-2 ring-rose-950"
@@ -83,6 +84,7 @@ function Form() {
             <div className="flex flex-col w-full">
               <label className="text-rose-950">Email</label>
               <input
+                placeholder="Enter your email"
                 type="email"
                 name="email"
                 className=" py-3 pl-2 rounded-lg outline-none bg-neutral-100 border border-slate-200 focus:ring-2 ring-rose-950"
@@ -98,9 +100,10 @@ function Form() {
             </div>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <label className="text-rose-950">Phone</label>
             <input
+              placeholder="Enter your phone number"
               type="text"
               name="phone"
               className="py-3 pl-2 rounded-lg outline-none bg-neutral-100 border border-slate-200 focus:ring-2 ring-rose-950"
@@ -122,7 +125,7 @@ function Form() {
               className="py-3 pl-2 rounded-lg outline-none bg-neutral-100 border border-slate-200 focus:ring-2 ring-rose-950"
             >
               <option value="" disabled className="text-slate-600">
-                Select Organisation
+                Select Category
               </option>
               <option value="Industry Participant">Industry Participant</option>
               <option value="Exhibitor">Exhibitor</option>
@@ -131,7 +134,7 @@ function Form() {
               <option value="VIP">VIP</option>
             </select>
             {organisation ? (
-              <span className=" text-xs py-1 mt-1 text-rose-950 font-bold">
+              <p className="text-[11px] py-1 mt-1 font-semibold -ml-4 text-rose-950 text-nowrap">
                 <span className="ml-4">
                   {organisation === "Industry Participant"
                     ? "A valid means of identification will be required at the event."
@@ -145,14 +148,15 @@ function Form() {
                     ? ""
                     : ""}
                 </span>
-              </span>
+              </p>
             ) : (
               ""
             )}
           </div>
           <div className="flex flex-col">
-            <label className="text-rose-950">Orgnisation Name</label>
+            <label className="text-rose-950">Organisation Name</label>
             <input
+              placeholder="Enter your organisation name"
               type="text"
               name="company"
               className="py-3 pl-2 rounded-lg outline-none bg-neutral-100 border border-slate-200 focus:ring-2 ring-rose-950"
