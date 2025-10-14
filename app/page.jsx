@@ -75,6 +75,9 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <div id="register">
+      <Form />
+      </div>
       {/* Schedule */}
       <section
         id="schedule"
