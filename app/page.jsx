@@ -226,7 +226,7 @@ export default function Home() {
       </section>*/}
 
       <div className="flex items-center justify-center flex-col px-3">
-        <div className="md:w-[80%] flex flex-col items-center justify-center">
+        <div className="md:w-[80%] mt-6 flex flex-col items-center justify-center">
           <h2 id="updates" className="text-3xl text-rose-950 font-bold">
             Latest Updates
           </h2>
