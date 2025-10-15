@@ -154,7 +154,7 @@ function Form() {
             )}
           </div>
           <div className="flex flex-col">
-            <label className="text-rose-950">Organisation Name</label>
+            <label className="text-rose-950">Company/School/Organisation Name</label>
             <input
               placeholder="Enter your organisation name"
               type="text"
