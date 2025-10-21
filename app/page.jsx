@@ -179,20 +179,20 @@ export default function Home() {
             Organized By:
           </h2>
           <Image
-            src="/logo3.png"
+            src="/organized.png"
             alt="logo image"
             width={2000}
             height={2000}
-            className="max-lg:w-full max-lg:h-18  lg:object-contain "
+            className=""
           />
         </div>
 
         <div className="md:w-[60%] flex items-center mt-18 flex-col justify-center mb-4">
-          <h2 id="organizers" className="text-3xl text-rose-950 font-bold">
+          <h2 id="organizers" className="text-3xl text-rose-950 font-bold mb-2">
             Supported By:
           </h2>
           <Image
-            src="/supporters.jpg"
+            src="/supporters.png"
             alt="logo image"
             width={2000}
             height={2000}
