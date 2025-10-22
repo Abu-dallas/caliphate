@@ -192,7 +192,7 @@ export default function Home() {
             Supported By:
           </h2>
           <Image
-            src="/SUPPORTERS.png"
+            src="/supporters.png"
             alt="logo image"
             width={2000}
             height={2000}
